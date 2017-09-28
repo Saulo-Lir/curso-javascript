@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <script type="text/javascript" src="script.js"></script>
+        <title>Alterando html</title>
+    </head>
+    
+    <body>
+        <div id="area">
+            Alguma coisa...<br/><br/>
+        </div>
+        <!-- Alterar um elemento pelo seu ID -->
+        <!-- Só altera a página carregada no navegador, não o arquivo .html -->
+        <button onclick="document.getElementById('area').innerHTML = prompt('Qual seu nome?');">
+            Fazer o Mal
+        </button>
+        
+        <!-- Alterar o próprio botão -->
+        
+        <button onclick="this.innerHTML = prompt('Qual o nome do botão?');">
+            Fazer o Mal
+        </button>
+                
+    </body>
+</html>
